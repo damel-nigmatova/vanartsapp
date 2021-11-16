@@ -1,14 +1,14 @@
 {
   "name": "project_vanarts",
   "version": "1.0.0",
-  "description": "stident mngmnt app",
+  "description": "Customers management app",
   "main": "file.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "student",
-    "app"
+    "customers",
+    "node-crud-app"
   ],
   "author": "",
   "license": "ISC",
