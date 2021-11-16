@@ -1,0 +1,57 @@
+<%- include('./partials/header.ejs'); %>
+<div class="container-add">
+<form action="" method="post" enctype="multipart/form-data">
+    <div>
+        <h2 style="margin-left: 0px;">Add new record<br>
+        <button type="submit" class="btn btn-1">Add Record</button>
+        <a href="/" class="btn btn-2">Customers list</a></h2>
+    </div>
+    <div class="mb-3 w-50">
+        <label for="first_name">First Name</label>
+        <input type="text" class="form-control w-50" name="first_name" id="first_name" placeholder="Please, enter your first name.">
+    </div>
+    <div class="mb-3 w-50">
+        <label for="last_name">Last Name</label>
+        <input type="text" class="form-control w-50" name="last_name" id="last_name" placeholder="Please, enter your last name.">
+    </div>
+    <div class="mb-3 w-50">
+        <label for="email">Email</label>
+        <input type="text" class="form-control w-50" name="email" id="email" placeholder="Please, enter your email.">
+    </div>
+    <div class="mb-3 w-50">
+        <label for="phone">Phone</label>
+        <input type="text" class="form-control w-50" name="phone" id="phone" placeholder="Please, enter your phone.">
+    </div>
+    <div class="mb-3 w-75">
+        <label for="address_city">City</label>
+        <input type="text" class="form-control w-25" name="address_city" id="address_city" placeholder="Please, enter your city.">
+        <input type="text" class="form-control w-25" name="address_state" id="address_state" placeholder="Please, enter your state.">
+        <input type="text" class="form-control w-25" name="address_country_zip" id="address_country_zip" placeholder="Please, enter your country zip.">
+    </div>
+    <div class="mb-3 w-50">
+        <label for="notes">Notes</label>
+        <input type="text" class="form-control w-50" name="notes" id="notes" placeholder="Please, enter your notes.">
+    </div>
+    <div class="mb-3 w-50">
+        <label for="item_purchased">Items Purchased</label>
+        <input type="text" class="form-control w-50" name="item_purchased" id="item_purchased" placeholder="Please, enter your purchased items.">
+    </div>
+    <div class="mb-3 w-50">
+        <label for="notes">Quanatity</label>
+        <input type="text" class="form-control w-50" name="quantity" id="quantity" placeholder="Please, enter your quantity.">
+    </div>
+    <div class="mb-3 w-50">
+        <label for="price">Price</label>
+        <input type="text" class="form-control w-50" name="price" id="price" placeholder="Please, enter total price.">
+    </div>
+    <div class="custom-file">
+        <label for="image" class="form-label">Image</label>
+        <input type="file" class="form-control custom-file-input w-50" name="image" id="image">
+    </div>
+
+    
+</form>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<%- include('./partials/header.ejs'); %>
+
+<div class="menu">
+  <h2>Node CRUD <i class="fas fa-seedling" style="color: white;"></i></h2>
+  <a href="/add" class="btn btn-1">Add new record</a>
+  <a href="/" class="btn btn-2">Customers list</a>
+</div>
+
+<div class="container" style="width: 70%; margin-left: 2%;">
+  <h1>E-commerce Node crud app</h1>
+
+
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">City</th>
+        <th scope="col">State</th>
+        <th scope="col">ZIP</th>
+        <th scope="col">Notes</th>
+        <th scope="col">Items</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Price</th>
+        <th scope="col">Image</th>
+      </tr>
+    </thead>
+    <tbody>
+
+        <% data.forEach((customer, index)=>{ %>
+        <tr>
+            <td><%= customer.id %></td>
+            <td><%= customer.first_name %></td>
+            <td><%= customer.last_name %></td>
+            <td><%= customer.email %></td>
+            <td><%= customer.phone %></td>
+            <td><%= customer.address_city %></td>
+            <td><%= customer.address_state %></td>
+            <td><%= customer.address_country_zip %></td>
+            <td><%= customer.notes %></td>
+            <td><%= customer.item_purchased %></td>
+            <td><%= customer.quantity %></td>
+            <td><%= customer.price %></td>
+            <td><img src="/assets/images/<%= customer.image %>" class="rounded-circle customer-img" alt=""/></td>
+
+            <td><a href="/edit/<%= customer.id %>"><i class="fas fa-pen" style="color: orange; width: 25px;"></i></a> 
+            <a href="/delete/<%= customer.id %>"><i class="fas fa-trash-alt" style="color: orange; width: 25px;"></i></a></td>
+            
+        </tr>
+<% }) %>
+
+    </tbody>
+</table>
+</div>
+</body>
+</html>

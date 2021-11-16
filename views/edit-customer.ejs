@@ -1,0 +1,48 @@
+<%- include('./partials/header.ejs'); %>
+<div class="container-add">
+<form action="" method="post" enctype="multipart/form-data">
+    <h2 style="margin-left: 0px;">Edit Customer Record</h2>
+    <button type="submit" class="btn btn-1">Update Student</button>
+    <div class="mb-3" style="margin-top: 3%;">
+        <label for="first_name">First Name</label>
+        <input type="text" class="form-control w-50" name="first_name" id="first_name" placeholder="Please, enter your first name." value="<%= customer.first_name %>">
+    </div>
+    <div class="mb-3 w-50">
+        <label for="last_name">Last Name</label>
+        <input type="text" class="form-control w-50" name="last_name" id="last_name" placeholder="Please, enter your last name." value="<%= customer.last_name %>">
+    </div>
+    <div class="mb-3 w-50">
+        <label for="email">Email</label>
+        <input type="text" class="form-control w-50" name="email" id="email" placeholder="Please, enter your email." value="<%= customer.email %>">
+    </div>
+    <div class="mb-3 w-50">
+        <label for="phone">Phone</label>
+        <input type="text" class="form-control w-50" name="phone" id="phone" placeholder="Please, enter your phone." value="<%= customer.phone %>">
+    </div>
+    <div class="mb-3 w-75">
+        <label for="address_city">City</label>
+        <input type="text" class="form-control w-25" name="address_city" id="address_city" placeholder="Please, enter your city." value="<%= customer.address_city %>">
+        <input type="text" class="form-control w-25" name="address_state" id="address_state" placeholder="Please, enter your state." value="<%= customer.address_state %>">
+        <input type="text" class="form-control w-25" name="address_country_zip" id="address_country_zip" placeholder="Please, enter your country zip." value="<%= customer.address_country_zip %>">
+    </div>
+    <div class="mb-3 w-50">
+        <label for="notes">Notes</label>
+        <input type="text" class="form-control w-50" name="notes" id="notes" placeholder="Please, enter your notes." value="<%= customer.notes %>">
+    </div>
+    <div class="mb-3 w-50">
+        <label for="item_purchased">Items Purchased</label>
+        <input type="text" class="form-control w-50" name="item_purchased" id="item_purchased" placeholder="Please, enter your purchased items." value="<%= customer.item_purchased %>">
+    </div>
+    <div class="mb-3 w-50">
+        <label for="quantity">Quanatity</label>
+        <input type="text" class="form-control w-50" name="quantity" id="quantity" placeholder="Please, enter your quantity." value="<%= customer.quantity %>">
+    </div>
+    <div class="mb-3 w-50">
+        <label for="price">Price</label>
+        <input type="text" class="form-control w-50" name="price" id="price" placeholder="Please, enter total price." value="<%= customer.price %>">
+    </div>
+</form>
+
+</div>
+</body>
+</html>
